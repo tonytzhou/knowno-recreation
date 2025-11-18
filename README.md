@@ -3,3 +3,13 @@ Through this project, I attempt to recreate the results of [KnowNo](https://gith
 
 ## Overview
 KnowNo serves as a framework that measures and aligns the uncertainty of LLMs regarding choosing the best outcome given a task. When stuck on a decision (often due to ambiguity), the LLM will then prompt the human for help in order to complete its task. Through the usage of conformal prediciton (CP), the LLM provides a statisical gurantee that the answers it provides must atleast meet a certain threshold in order to be considered for the prediction set. Although the original paper consisted of 3 experiments (Mobile Manipulation, Table Rearrangement, & Bimanual Manipulation), they all follow the same concept of having the LLM form a 4 answer multiple choice question and forming the prediction set. If the prediction set has more than one answer, then human help is prompted, if not, execute the action.
+
+## Experimental Data
+
+
+## Deviations from Paper
+There were some deviations from the original paper that have defintiley affected results. Despite this, I feel that the experiment was still a success as a lot of datasets were more accurate and led me to a better overall understanding for LLMs. These include:
+- Uses **Ollama Llama 3.1:8b** instead of **PaLM-2L** or **GPT 3.5**, necessary change as PaLM-2L has been discontinued and GPT 3.5 requires token purchases
+  - However, Ollama Llama 3.1:8b has better capabilities than GPT 3.5
+- Smaller test set, while the original paper's Mobile Manipulation test set had **270** tests, I only performed **100** due to hardware restrictions (ran on laptop)
+- No interaction with robots in actual environments, hardware restrictions
