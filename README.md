@@ -1,1 +1,5 @@
-# knowno-recreation
+# Recreation of KnowNo
+Through this project, I attempt to recreate the results of [KnowNo](https://github.com/google-research/google-research/tree/master/language_model_uncertainty), primarily the statistical data, and ideally tesing on hardware down the line. The goal of this is primarily for learning purposes, specifically on gaining more knowledge on the interaction of LLMs on real world systems, conformal prediction, & overall AI research in general.
+
+## Overview
+KnowNo serves as a framework that measures and aligns the uncertainty of LLMs regarding choosing the best outcome given a task. When stuck on a decision (often due to ambiguity), the LLM will then prompt the human for help in order to complete its task. Through the usage of conformal prediciton (CP), the LLM provides a statisical gurantee that the answers it provides must atleast meet a certain threshold in order to be considered for the prediction set. If there is more than one answer in the prediciton set, the LLM prompts for human help. Although the original paper consisted of 3 experiments (Mobile Manipulation, Table Rearrangement, & Bimanual Manipulation), they all follow the same concept of having the LLM form a 4 answer multiple choice question and forming the prediction set from the 
