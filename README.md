@@ -6,11 +6,9 @@ KnowNo serves as a framework that measures and aligns the uncertainty of LLMs re
 
 ## Experimental Data (Software Only)
 ### Tabletop Rearrangement
-![Table 1](/knowno-recreation/images/tabletop_rearrangement_KnowNo.png)
+![Table 1](/knowno-recreation/images/tabletop_rearrangement_KnowNo.png) vs. 
 ### Mobile Manipulation
-![Table 2](/knowno-recreation/images/mobile_manipulation_KnowNo.png)
-
-
+![Table 2](/knowno-recreation/images/mobile_manipulation_KnowNo.png) vs. 
 
 ## Deviations from Paper
 There were some deviations from the original paper that have defintiley affected results. Despite this, I feel that the experiment was still a success as a lot of datasets were more accurate and led me to a better overall understanding for LLMs. These include:
@@ -21,3 +19,5 @@ There were some deviations from the original paper that have defintiley affected
 >        " The calibration invoves running LLM inference for a fair number of calibration data (200). You can also skip the calibration and directly test in new scenarios at the last block based on provided calibration result."
 - No interaction with robots in actual environments, hardware restrictions
 
+## Conclusion/My Takeaways
+KnowNo served as a great baseline approach to combatting LLM uncertainty and hallucinations through the usage of CP, and I'm sure that it served as a crucial building block for LLM optimizations in efficency and autonomy. I am sure that when KnowNo was published, and even to now, many people were able to take advantage of KnowNo's results to grow LLM capabilities. The goal of recreating exact results of KnowNo did not go as planned due to many deviations including models used, hardware restrictions, and limited capabilities. Despite this, I have greatly expanded my knowledge on LLMs, tech stacks, conformal prediction, and reserach as a whole. I plan to further develop my code and ideally stay more true to the paper as I'm aware this would never work as a proper recreation of a scientific paper.
