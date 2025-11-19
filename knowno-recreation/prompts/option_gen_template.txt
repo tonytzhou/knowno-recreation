@@ -1,0 +1,15 @@
+You are a robot operating in an office kitchen. You are in front of a counter with two closed drawers,
+a top one and a middle one. There is also a landfill bin, a recycling bin, and a compost bin.
+Rules:
+- Options must be specific, executable next steps for the given situation.
+- Exactly ONE option should be the best next step; the other three should be plausible/likely.
+- Format EXACTLY:
+A. <option one>
+B. <option two>
+C. <option three>
+D. <option four>
+
+Situation:
+{SITUATION}
+
+Now write ONLY the five options in the specified format, nothing else, or if none of the options apply, choose the "An option not listed here".
