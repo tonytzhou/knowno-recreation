@@ -54,6 +54,13 @@ There were some deviations from the original paper that have defintiley affected
   > "The calibration invoves running LLM inference for a fair number of calibration data (200). You can also skip the calibration and directly test in new scenarios at the last block based on provided calibration result."
 - No interaction with robots in actual environments, hardware restrictions
 - Didn't account for entire plans, just tasks
+  
+## Challenges
+- Learning - Most of the time was spent making sense of the paper, key algorithms and how they worked, how to code what I needed, core techstack & libraries, fixing bugs, etc.
+- Jupyter notebooks not working: [Mobile Manipulation in the Github](https://github.com/google-research/google-research/blob/master/language_model_uncertainty/KnowNo_MobileManipulation.ipynb) & [Tabletop Sim](https://github.com/google-research/google-research/blob/master/language_model_uncertainty/KnowNo_TabletopSim.ipynb)
+- Finding an open source/free LLM that supported log probabilites, thankfully Ollama's v0.12.11 (released barely last week) had been implemented to support top log probabilites
+- Working around large datasets with limited hardware
+- Proper steps to take when calibrating/experimenting/evaluating
 
 ## Conclusion/My Takeaways
 KnowNo served as a great baseline approach to combatting LLM uncertainty and hallucinations through the usage of CP, and I'm sure that it served as a crucial building block for LLM optimizations in efficency and autonomy. I am sure that when KnowNo was published, and even to now, many people were able to take advantage of KnowNo's results to grow LLM capabilities. The goal of recreating exact results of KnowNo did not go as planned due to many deviations including models used, hardware restrictions, and limited capabilities. I'm sure that Despite this, I have greatly expanded my knowledge on LLMs, tech stacks, conformal prediction, and reserach as a whole. If I were to do this again, I plan to further develop my code and ideally stay more true to the paper as I'm aware this would never work as a proper recreation of a scientific paper.
